@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --text-color: #1a1c20;
+    --link-color:#4a76ee;
+    --background-color: #eeeff1;
+    
+}
+
+body{
+    
+    background-color: var(--background-color);
+    max-width: 1920px;
+    /* margin: 0px 50px ; */
+    
+    
+    
+}
+
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    
+}
+
+.navbar #brand{
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a1c20;
+    text-decoration: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:#1a1c20;
+    margin: 0px 10px;
+    
+}
+
+.nav-links span{
+    margin-left: 5px;
+}
+
+#emails{
+    color: white;
+    background-color: #1a1c20;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.Intro-section{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.left h2{
+    font-size: 35px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    text-decoration: dashed;
+}
+
+.links{
+    margin-top: 25px;
+    
+}
+
+.links a{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 2px solid var(--link-color);
+    color: var(--link-color);
+    border-radius: 5px;
+   
+}
+
+.right img{
+    display: flex;
+    flex: 2;
+    justify-content: right;
+    border-radius: 50%;
+}
+
+.skill-section{
+    text-align: center;
+    padding: 0px 50px;
+    margin-bottom: 100px;
+    
+}
+
+.skill-section h2{
+    font-size: 35px;
+    color: var(--text-color);
+    text-decoration-thickness: 2px;
+}
+
+.skill-section p{
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+
+}
+
+.skills{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+    
+    
+}
+
+.card{
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 3px;
+    width: 200px;
+    object-fit: contain;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 30px;
+    height: 30px;   
+}
+
+.testimony{
+    padding: 0px 50px;
+    margin-bottom: 100px;
+}
+
+.testimony h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+.testimony .group{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.person-details{
+    text-align: center;
+}
+
+.person-details img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.person-details h2{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.contact-section{
+    padding: 0px 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2{
+    font-size: 35px;
+    color: var(--text-color);
+    
+}
+
+.container{
+    display: flex;
+    gap: 50px;
+}
+
+.container .text{
+    margin-top: 20px;
+    
+}
+
+.form{
+    display:flex;
+
+    
+    
+    
+}
+
+.container form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid var(--link-color);
+    display: block;
+    width: 650px;
+    height: 43px;
+}
+
+.container form textarea{
+    padding: 10px;
+    background: transparent;
+    border: 2px solid var(--link-color);
+    display: block;
+    margin-bottom: 15px;
+    resize: none;
+    outline: none;
+    width: 650px;
+    height:223.2px ;
+    
+    
+}
+
+.container form button{
+    font-size: 1rem;
+    height: 50px;
+    border: none;
+    background-color: var(--link-color);
+    color: #fff;
+    width: 650px;
+    transition: all o.3s ease;
+}
+.container form button:hover{
+    background-color: #3b5bdc;
+}
+
+@media screen and (max-width: 1920px){
+    body{
+        padding: 0px 50px ;
+    }
+    .Intro-section h2{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 1272px){
+    body{
+        padding: 0;
+    }
+    .Intro-section h2{
+        font-size: 45px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:740px ){
+    .Intro-section{
+        padding: 0px 50px;
+        flex-direction: column-reverse;
+    }
+    .Intro-section img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .testimony h2{
+        text-align: center;
+    }
+
+    .testimony .group{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-section .container{
+        flex-direction: column;
+    }
+    .contact-section .container input {
+        width: 618.2px;
+    }
+    .contact-section .container textarea{
+        width: 618.2px;
+    }
+    .contact-section .container form button{
+        width: 618.2px;
+    }
+
+
+ 
+}
+
+@media screen and (max-width: 600px){
+
+    .navbar{
+        padding: 0px 20px;
+    }
+    .navbar .nav-links span{
+        display: none;
+    }
+    .navbar .nav-links a{
+       font-size: 22px;;
+    }
+    .navbar .nav-links #emails{
+       color: var(--text-color);
+       background-color: transparent;
+       font-size: 22px;
+       margin: 0px 10px;
+       padding: 0;
+
+    }
+
+    .Intro-section{
+        padding: 0px 20px;
+        flex-direction: column-reverse;
+    }
+    .Intro-section h2{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .Intro-section img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .skill-section{
+        padding: 0px 20px;
+    }
+
+    .testimony{
+        padding: 0px 20px;
+        
+    }
+
+    .testimony h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    .testimony .group{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimony .group  h2 ,p{
+        font-size: 16px;
+    }
+    .description{
+        text-align: center;
+    }
+    .contact-section{
+        padding: 0px 20px;
+    }
+    .contact-section .container{
+        flex-direction: column;
+    }
+
+    .contact-section .container input {
+        width: 515px;
+    }
+    .contact-section .container textarea{
+        width: 515px;
+    }
+    .contact-section .container form button{
+        width: 515px;
+    }
+
+}
+
